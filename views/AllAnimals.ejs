@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Animal Data</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 140%;
+    }
+
+    td,
+    th {
+        border: 1px solid black;
+        text-align: center;
+        padding: 9px;
+    }
+
+    tr:nth-child(even) {
+        background-color: darkcyan;
+        color: white;
+        text-align: center;
+    }
+
+    h1{
+        	font-family: Verdana, Geneva, Tahoma, sans-serif ;
+			color: antiquewhite;
+			text-align: center;
+    }
+    h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: crimson;
+            font-size: medium;
+    }
+    th {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:yellow ;
+
+    }
+    tr {
+        background-color: darkcyan;
+        color: white;
+
+    }
+   
+</style>
+
+<body>
+    <h1>Animal List</h1>
+    <% if (animals.length===0) { %>
+    <h2>No records found!</h2>
+        <% } else{ %>
+        <table>
+            <tr>
+                <th>Animal Name</th>
+                <th>Species</th>
+                <th>Count</th>
+                <th>Description</th>
+                <th>Image</th>
+            </tr>
+            <% for(let row of animals) {%>
+            <tr>
+                <td><%=row.animalName %></td>
+                <td><%=row.species %></td>
+                <td><%=row.count %></td>
+                <td><%=row.description %></td>
+                <td><a target="__blank" href=/pictures/<%=row.animalName %>>click here</a></td>
+            </tr>
+            <% } %>
+        </table>
+        <% } %>
+
+       
+</body>
+
+</html>

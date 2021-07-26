@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+		body{
+			background-color: black;
+		}
+		h1{
+			font-family: Verdana, Geneva, Tahoma, sans-serif ;
+			color: antiquewhite;
+			text-align: center;
+		}
+		p{
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			color: darkorange;
+		}
+</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Count Update</title>
+</head>
+<body>
+	<h1>Update Animal Count</h1>
+	<form action="http://100.25.149.75:3000/updatecount" method="post">
+	<p>	Animal Name:   <input type="text" name="animalName" required><br/><br/>
+		New Count:	<input type="number" name="newCount" required><br/><br/>
+		<input type="submit" value="Submit"></p>
+	</form>
+</body>
+</html>

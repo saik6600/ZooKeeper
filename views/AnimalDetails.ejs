@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animal Details</title>
+</head>
+<style>
+	body{
+		background-color: black;
+	}
+	h1{
+        	font-family: Verdana, Geneva, Tahoma, sans-serif ;
+			color: bisque;
+			text-align: center;
+			font-size: 25px;
+    }
+	b{
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		color: greenyellow;
+		font-size: 15px;
+	}
+	
+	span{
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		font-size: 15px;
+		color: antiquewhite;
+	}
+
+
+</style>
+<body>
+	<h1>Animal Details</h1>
+	<div>
+		<b>Name : </b> <span><%= animal.animalName %></span><br/><br/>
+		<b>Species : </b> <span><%= animal.species %></span><br/><br/>
+		<b>Count : </b> <span><%= animal.count %></span><br/><br/>
+		<b>Description : </b> <span><%= animal.description %></span><br/><br/>
+		<b>Image : </b>  <span><a target="__blank" href="/pictures/<%= animal.animalName %>">click here</a></span>
+	</div>
+</body>
+</html>

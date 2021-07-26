@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+	body{
+		background-color: black;
+	}
+	h1{
+		font-family: Verdana, Geneva, Tahoma, sans-serif ;
+		color: antiquewhite;
+		text-align: center;
+	}
+	p{
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		color: darkorange;
+
+	}
+	span{
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		color: darkorange;
+		
+	}
+
+</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add Animal</title>
+</head>
+<body>
+	<h1>Add Animal Details</h1><br/>
+	<form action="http://100.25.149.75:3000/addanimal" method="POST" enctype="multipart/form-data">
+	<p>	Animal Name:	<input type="text" name="animalName" required><br/><br/>
+		Species: 	<input type="text" name="species" required><br/><br/>
+		Count: 	<input type="text" name="count" required><br/><br/>
+		Description: 	<input type="text" name="description" required><br/><br/><br/></p><br/><br/>
+	<span>Picture: 	<br/><input type="file" name="animalPhoto" accept="image/jpeg" required><br/><br/>
+		
+		<input type="submit" value="Submit"></span>
+	</form>
+</body>
+</html>

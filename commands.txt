@@ -1,0 +1,39 @@
+1) click on account details and replace aws credentials in index.js(line 4,5,6)
+2) create rds with dbname as animaldb and run sqlinit.sql commands in workbench and also paste endpoint in the index.js host field(line 19)
+3) create s3 with bucket name: kishananimalbucket
+4) create ec2 and replace all localhost in html files with ec2 public ipv4 address
+5) run all ubuntu commands
+
+
+ubuntu commands:
+
+sudo nano index.js
+sudo nano package.json
+mkdir views
+nimal
+sudo nano AllAnimals.ejs
+sudo nano AnimalDetails.ejs
+cd ~
+sudo apt update
+sudo apt upgrade -y
+sudo apt install nginx -y
+sudo ufw allow 'Nginx HTTP'
+sudo apt install nodejs -y
+sudo apt install npm -y
+npm i
+cd /var/www/html
+sudo rm index.nginx-debian.html
+sudo nano index.html
+sudo nano AddAnimal.html
+sudo nano DeleteAnimal.html
+sudo nano OneAnimal.html
+sudo nano UpdateAnimalCount.html
+npm i express
+npm i aws-sdk
+npm i mysql 
+npm i multer
+
+To kill a port:
+sudo kill -9 $(sudo lsof -t -i:3000) 
+cd ~
+node index.js
